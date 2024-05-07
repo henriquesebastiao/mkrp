@@ -36,6 +36,10 @@ pydocstyle = "^6.3.0"
 radon = {extras = ["toml"], version = "^6.0.1"}
 bandit = {extras = ["toml"], version = "^1.7.8"}
 ignr = "^2.2"
+pytest = "^8.2.0"
+pytest-cov = "^5.0.0"
+coverage-badge = "^1.1.1"
+setuptools = "^69.5.1"
 
 [tool.poetry.scripts]
 mkrp = "mkrp.cli:app"
@@ -84,7 +88,7 @@ lint = "task ruff && task blue && task isort"
 format = 'blue ./mkrp/cli.py  && isort .'
 docs = "mkdocs serve"
 quality = "task mypy && task radon && task pydocstyle"
-badge = "coverage-badge -o docs/assets/coverage.svg -f"
+badge = "coverage-badge -o img/coverage.svg -f"
 pre_test = "task lint"
 test = "pytest -s -x --cov=mkrp -vv"
 post_test = "coverage html"
