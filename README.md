@@ -1,6 +1,8 @@
 # Make Repository
 
 [![CI](https://github.com/henriquesebastiao/mkrp/actions/workflows/ci.yml/badge.svg)](https://github.com/henriquesebastiao/mkrp/actions/workflows/ci.yml)
+[![Coverage](img/coverage.svg)](https://github.com/henriquesebastiao/mkrp)
+[![PyPI version](https://badge.fury.io/py/mkrp.svg)](https://badge.fury.io/py/mkrp)
 
 `mkrp` is a command-line tool for initial configuration of tools for a new repository.
 
